@@ -7,7 +7,6 @@ In order for an open source project to be sustainable, it must continue to be ma
 # Metrics in the Metrics Model
 
 ## Contributor Count
-***
 
 * Definition: determine how many active code commit authors, pr authors, review participants, issue authors, and issue comments participants there are in the past 90 days
 * Weight: 18.01%
@@ -15,77 +14,65 @@ In order for an open source project to be sustainable, it must continue to be ma
 * Note: when a person has more than one contributions with different roles in multiple repositories, like code commit author and issue author, we only count once.
 
 ## Commit Frequency
-***
 * Definition: determine the average number of commits per week in the past 90 days.
 * Weight: 18.01%
 * Threshold: 1000
 
 ## Updated Since
-***
 * Definition: determine the average time per repository since the repository was last updated (in months).
 * Weight: 12.74%
 * Threshold: 0.25
 
 ## Organization Count
-***
 * Definition: determine the number of distinct organizations that contributors belong to.
 * Weight: 11.50%
 * Threshold: 10
 
 ## Created Since
-***
 * Definition: determine how long a repository has existed since it was created (in months).
 * Weight: 7.77%
 * Threshold: 120
 * Note: The existence time will be superimposed in the multi-repositories scenario.
 
 ## Comment Frequency
-***
 * Definition: determine the average number of comments per issue created in the last 90 days.
 * Weight: 7.77%
 * Threshold: 5
 
 ## Code Review Count
-***
 * Definition: determine the average number of review comments per pull request created in the last 90 days
 * Weight: 4.92%
 * Threshold: 8
 
 ## Updated Issues Count
-***
 * Definition: determine the number of issues updated in the last 90 days.
 * Weight: 4.92%
 * Threshold: 2500
 
 ## Recent Releases Count
-***
 * Definition: determine the number of releases in the last year.
 * Weight: 3.18%
 * Threshold: 12
 
 ## Maintainer Count
-***
 * Definition: determine the average number of maintainers per repository.
 * Weight: 2.090%
 * Threshold: 100
 * Note: not ready yet. 
 
 ## Meeting Count
-***
 * Definition: determine the number of meetings held in the last 90 days.
 * Weight: 2.090%
 * Threshold: 100
 * Note: not ready yet.
 
 ## Meeting Attendee Count
-***
 * Definition: determine the average number of attendees per meeting in the last 90 days.
 * Weight: 2.090%
 * Threshold: 10
 * Note: not ready yet.
 
 ## Closed Issues Count
-***
 * Definition: determine the number of issues closed in the last 90 days.
 * Weight: 4.92%
 * Threshold: 2500
