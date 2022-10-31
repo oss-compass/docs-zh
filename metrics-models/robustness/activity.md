@@ -24,7 +24,7 @@ In order for an open source project to be sustainable, it must continue to be ma
 * Threshold: 0.25 months
 
 ## Organization Count
-* Definition: Determine the number of distinct organizations that contributors belong to.
+* Definition: Number of organizations to which active code contributors belong in the past 90 days
 * Weight: 11.50%
 * Threshold: 10
 

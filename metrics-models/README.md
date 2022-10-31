@@ -34,7 +34,7 @@ Definition: The capacity to create and recognize meaningful diversity and thereb
 Metrics Model Names | Descriptions 
 --- | --- 
 [Developer Attraction](./niche-creation/ecological-diversity/developer-attraction.md#developer-attraction) | Coming soon!
-[Organizations Activity](./niche-creation/ecological-diversity/organization-activity.md#organizations-activity) | Coming soon!
+[Organizations Activity](./niche-creation/ecological-diversity/organization-activity.md#organizations-activity) | It is used to describe how active organizations are in a community.
 [Technological Advancement](./niche-creation/technological-advancement.md#technological-advancement) | Coming soon!
 
 
