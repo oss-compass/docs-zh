@@ -1,6 +1,6 @@
 # Open Source Community Ecosystem Evaluation System
 
-Ecosystem is used to describe the health status of open source community standing from ecology context. We create three top level dimensions: Productivity, Robustness and Niche. 
+Ecosystem is used to describe the health status of open source community standing from ecology context. We create three top level dimensions: Productivity, Robustness and Niche Creation. 
 
 # Dimensions
 
@@ -15,7 +15,7 @@ Metrics Model Names | Descriptions
 [Content](./productivity/content.md#content) | Coming soon!
 [Community Service and Support](./productivity/community-service-and-support.md#community-service-and-support) | It measures the quality of services and support provided by the community as directly perceived by a developer during the contribution process.
 
-## **Robustness**
+## [**Robustness**](./robustness/README.md)
 Definition: The capability of an ecosystem or project to face and survive disruptions.
 
 Metrics Model Names | Descriptions 
@@ -28,7 +28,7 @@ Metrics Model Names | Descriptions
 [Outbound Connectedness](./robustness/organization/outbound-connectedness.md) | Coming soon!
 
 
-## **Niche**
+## [**Niche Creation**](./niche-creation/README.md)
 Definition: The capacity to create and recognize meaningful diversity and thereby new capabilities.
 
 Metrics Model Names | Descriptions 
