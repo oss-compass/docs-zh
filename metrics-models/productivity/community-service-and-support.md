@@ -66,13 +66,13 @@ Code Review Count  |     0.500 | 0.500 | 0.750 | 0.800 | 0.800 | 1.000 | 1.000
 
 Metrics Name | Eigenvector | Weight
 --- | --- | ---
-updated_issues_count	| 1.380 |	19.721%	
-close_pr_count			| 1.380 |	19.721%
-issue_first_response	| 1.006 |	14.372%
-issue_open_time			| 0.901 |	12.876%
-pr_open_time			| 0.901 |	12.876%
-comment_frequency		| 0.715 |	10.217%
-code_review_count		| 0.715 |	10.217%
+Updated Issues Count|   1.380 |	19.721%	
+Close PR Count        | 1.380 |	19.721%
+Issue First Response |  1.006 |	14.372%
+Bug Issue Open Time |   0.901 |	12.876%
+PR Open Time        |   0.901 |	12.876%
+Comment Frequency  |    0.715 |	10.217%
+Code Review Count  |    0.715 |	10.217%
 
 ### Consistency Test Results
 
