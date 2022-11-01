@@ -1,4 +1,4 @@
-# Open Source Community Ecosystem Evaluation System
+# Ecosystem Evaluation System
 
 Ecosystem is used to describe the health status of open source community standing from ecology context. We create three top level dimensions: Productivity, Robustness and Niche Creation. 
 
