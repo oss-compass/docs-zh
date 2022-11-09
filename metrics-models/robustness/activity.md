@@ -16,7 +16,7 @@ In order for an open source project to be sustainable, it must continue to be ma
 
 # Metrics in the Metrics Model
 
-## Updated Issues Count
+## Contributor Count
 
 * Definition: Determine how many active code commit authors, pr authors, review participants, issue authors, and issue comments participants there are in the past 90 days
 * Weight: 18.01%
