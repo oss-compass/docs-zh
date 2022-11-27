@@ -1,17 +1,17 @@
 ---
-title: Code Security Guarantee
+title: 代码安全保障
 slug: /metrics-models/productivity/code-security-guarantee
 tags:
-  - Metrics Models
-  - Productivity
-  - Code Security Guarantee
-description: Coming soon!
+  - 评估模型
+  - 生产力
+  - 代码安全保障
+description: 即将推出！
 ---
 
-# Code Security Guarantee
+# 代码安全保障
 
 :::tip
 
-Coming soon!
+即将推出！
 
 :::

@@ -1,94 +1,98 @@
 ---
-title: Organizations Activity
-slug: /metrics-models/niche-creation//developer-retention
+title: 组织活跃度
+slug: /metrics-models/niche-creation/developer-retention
 tags:
-  - Metrics Models
-  - Niche Creation
-  - Organizations Activity
-description: Describe how active organizations are in a community.
+  - 评估模型
+  - 创新力
+  - 组织活跃度
+description: 评估一个社区中组织的活跃程度。
 ---
 
-# Organizations Activity
+# 组织活跃度
 
-Organizational activity is used to describe how active organizations are in a community.
+该模型用于评估社区中组织的活跃程度。
 
-# Metrics in the Metrics Model
+# 评估模型中的指标
 
-## Org Count
+## 组织数量
 
-* Definition: Number of organizations to which active code contributors belong in the past 90 days
-* Weight: 32.258%
-* Threshold: 30
+* 定义：过去 90 天内活跃的代码提交者所属组织的数目
+* 权重：32.258%
+* 阈值：30
 
-## Contributor Count
+## 贡献者数量
 
-* Definition: Number of active code contributors with organization affiliation in the past 90 days
-* Weight: 25.806%
-* Threshold: 300
+* 定义：过去 90 天内有组织附属关系的活跃的代码贡献者人数
+* 权重：25.806%
+* 阈值：300
 
-## Commit Frequency
+## 代码提交频率
 
-* Definition: Determine the average number of commits with organization affiliation per week in the past 90 days.
-* Weight: 25.81%
-* Threshold: 800
+* 定义：过去 90 天内平均每周有组织归属的代码提交次数。
+* 权重：25.81%
+* 阈值：800
 
-## Contribution Last
+## 持续贡献
 
-* Definition: Total contribution time of all organizations to the community in the past 90 days (weeks).
-* Weight: 16.13%
-* Threshold: 200
+* 定义：在过去 90 天所有组织向社区有代码贡献的累计时间（周）。
+* 权重：16.13%
+* 阈值：200
 
-# Metric Model Algorithm
+# 评估模型算法
 
-## Weight
+## 权重
 
-We use [AHP](https://en.wikipedia.org/wiki/Analytic_hierarchy_process) to calculate weight of each metric.
+我们使用 [AHP](https://en.wikipedia.org/wiki/Analytic_hierarchy_process) 来计算每个指标的权重。
 
-### AHP Input Data
-Metric Name | Org Count | Contributor Count | Commit Frequency | Contribution Last 
---- | --- | --- | --- | --- 
-Org Count | 		 1.000	| 1.250	| 1.250	| 2.000
-Contributor Count |  0.800	| 1.000	| 1.000	| 1.600
-Commit Frequency |   0.800	| 1.000	| 1.000	| 1.600
-Contribution Last |  0.500	| 0.625	| 0.625	| 1.000
+### AHP 输入数据
 
-### AHP Analysis Result
+| 指标名称  | 组织数量 | 贡献者数量 | 代码提交频率 | 持续贡献  |
+| --- | --- | --- | --- | --- |
+| 组织数量  | 1.000 | 1.250 | 1.250 | 2.000 |
+| 贡献者数量 | 0.800 | 1.000 | 1.000 | 1.600 |
+| 代码提交频率 | 0.800 | 1.000 | 1.000 | 1.600 |
+| 持续贡献  | 0.500 | 0.625 | 0.625 | 1.000 |
 
-Metrics Name | Eigenvector | Weight
---- | --- | ---
-Org Count | 		 1.290	| 32.258%
-Contributor Count |  1.032	| 25.806%
-Commit Frequency |   1.032	| 25.806%
-Contribution Last |  0.645	| 16.129%
+### AHP 分析结果
 
-### Consistency Test Results
+| 指标名称  | 特征向量 | 权重      |
+| --- | --- | --- |
+| 组织数量  | 1.290 | 32.258% |
+| 贡献者数量 | 1.032 | 25.806% |
+| 代码提交频率 | 1.032 | 25.806% |
+| 持续贡献  | 0.645 | 16.129% |
 
-Largest Eigenvalue | CI Value | RI Value| CR Value | Consistency Test
---- | --- | --- | --- | ---
-4.000 | 0.000	| 0.890 | 0.000	 | PASS
+### 一致性检验结果
 
+| 最大特征根 | CI 值 | RI 值 | CR 值 | 一致性检验结果 |
+| --- | --- | --- | --- | --- |
+| 4.000 | 0.000 | 0.890 | 0.000 | PASS    |
 
-## Threshold
+## 阈值
 
-The threshold we chose is based on the big-data observations from different types of open source projects.
+我们选择的阈值是基于不同类型开源项目的大数据观测。
 
-# References
+# 参考文献
 
 * [CHAOSS Metric Model: Organizations Activity](https://github.com/chaoss/wg-metrics-models/tree/main/metrics-model-libs/organization-activity)
 
-# Contributors
-## Frontend
+# 贡献者
+
+## 前端
+
 * Shengxiang Zhang
 * Feng Zhong
 * Chaoqun Huang
 * Huatian Qin
 * Xingyou Lai
 
-## Backend
+## 后端
+
 * Yehui Wang
 * Shengbao Li
 * Huatian Qin
 
-## Metric Model
+## 评估模型
+
 * Yehui Wang
 * Shengbao Li

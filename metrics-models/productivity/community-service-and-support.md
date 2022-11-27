@@ -1,109 +1,109 @@
 ---
-title: Community Service and Support
+title: 社区服务与支撑
 slug: /metrics-models/productivity/niche-creation
 tags:
-  - Metrics Models
-  - Productivity
-  - Community Service and Support
-description: Community Service and Support measures the quality of services and support provided by the community as directly perceived by a developer during the contribution process.
+ - 评估模型
+ - 生产力
+ - 社区服务与支撑
+description: 用于评估开发者在贡献过程中，所能直接感知到社区提供的服务和支撑做得如何。
 ---
 
-# Community Service and Support
+# 社区服务与支撑
 
-Community Service and Support measures the quality of services and support provided by the community as directly perceived by a developer during the contribution process.
+用于评估开发者在贡献过程中，所能直接感知到社区提供的服务和支撑做得如何。
 
-# Metrics in the Metrics Model
+# 评估模型中的指标
 
-## Updated Issues Count
+## 更新 Issue 数量
 
-* Definition: Determine the number of issues updated in the last 90 days.
-* Weight: 19.721%
-* Threshold: 2000
+* 定义：过去 90 天 Issue 更新的数量。
+* 权重：19.721%
+* 阈值：2000
 
-## Close PR Count
+## 关闭 PR 数量
 
-* Definition: The number of PR accepted and declined in the last 90 days.
-* Weight: 19.721%
-* Threshold: 4500
+* 定义：过去 90 天内合并和拒绝的 PR 数量。
+* 权重：19.721%
+* 阈值：4500
 
-## Issue First Response
+## Issue 首次响应时间
 
-* Definition: Average/Median first comments response (in days) for new issues created in the last 90 days. This excludes bot responses,, the creator's own comment, or an action assigned by the issue. If the issue has been unanswered, the first response time is not counted.
-* Weight: 14.372%
-* Threshold: 15 days
+* 定义：过去 90 天新建 Issue 首次响应时间的均值和中位数（天）。这不包括机器人响应、创建者自己的评论或 Issue 的分配动作（action）。如果 Issue 一直未被响应，该 Issue 不被算入统计。
+* 权重：14.372%
+* 阈值：15 天
 
-## Bug Issue Open Time
+## Bug 类 Issue 处理时间
 
-* Definition: Average/Median time (days) that bug issues have been opened for issues created in the last 90 days. 
-* Weight: 12.88%
-* Threshold: 60 days
-* Note: Issue that labeled by Bugs.
+* 定义：过去 90 天新建的 Bug 类 Issue 处理时间的均值和中位数（天），包含已经关闭的 Issue 以及未解决的 Issue。
+* 权重：12.88%
+* 阈值：60 天
+* 注：标记为 Bug 类的 Issue。
 
-## PR Open Time
+## PR 处理时间
 
-* Definition: Average/Median processing time (days) for new change requests created in the last 90 days, including closed/accepted change requests and unresolved change requests.
-* Weight: 12.88%
-* Threshold: 30 days
+* 定义：过去 90 天新建 PR 的处理时间的均值和中位数（天），包含已经关闭的 PR 以及未解决的 PR
+* 权重：12.88%
+* 阈值：30 天
 
-## Comment Frequency
+## Issue 评论频率
 
-* Definition: Determine the average number of comments per issue created in the last 90 days.
-* Weight: 10.217%
-* Threshold: 5
+* 定义：过去 90 天内新建 Issue 的评论平均数（不包含机器人和 Issue 作者本人评论）。
+* 权重：10.217%
+* 阈值：5
 
-## Code Review Count
+## 代码审查评论频率
 
-* Definition: Determine the average number of review comments per pull request created in the last 90 days.
-* Weight: 10.217%
-* Threshold: 8 
+* 定义：过去 90 天内新建 PR 的评论平均数量（不包含机器人和 PR 作者本人评论）。
+* 权重：10.217%
+* 阈值：8
 
-# Metric Model Algorithm
+# 评估模型算法
 
-## Weight
+## 权重
 
-We use [AHP](https://en.wikipedia.org/wiki/Analytic_hierarchy_process) to calculate weight of each metric.
+我们使用 [AHP](https://en.wikipedia.org/wiki/Analytic_hierarchy_process) 来计算每个指标的权重。
 
-### AHP Input Data
+### AHP 输入数据
 
-Metric Name | Updated Issues Count | Close PR Count | Issue First Response | Bug Issue Open Time | PR Open Time | Comment Frequency | Code Review Count
---- | --- | --- | --- | --- | --- | --- | --- 
-Updated Issues Count|    1.000 | 1.000 | 1.333 | 1.500 | 1.500 | 2.000 | 2.000
-Close PR Count        |   1.000 |  1.000 | 1.333 | 1.500 | 1.500 | 2.000 | 2.000
-Issue First Response |   0.750 | 0.750 | 1.000 | 1.143 | 1.143 | 1.333 | 1.333
-Bug Issue Open Time |    0.667 | 0.667 | 0.875 | 1.000 | 1.000 | 1.250 | 1.250
-PR Open Time        |     0.667 | 0.667 | 0.875 | 1.000 | 1.000 | 1.250 | 1.250
-Comment Frequency  |     0.500 | 0.500 | 0.750 | 0.800 | 0.800 | 1.000 | 1.000
-Code Review Count  |     0.500 | 0.500 | 0.750 | 0.800 | 0.800 | 1.000 | 1.000
+| 指标名称 | 更新 Issue 数量 | 关闭 PR 数量 | Issue 首次响应时间 | Bug 类 Issue 处理时间 | PR 处理时间 | Issue 评论频率 | 代码审查评论频率 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 更新 Issue 数量 | 1.000 | 1.000 | 1.333 | 1.500 | 1.500 | 2.000 | 2.000 |
+| 关闭 PR 数量 | 1.000 | 1.000 | 1.333 | 1.500 | 1.500 | 2.000 | 2.000 |
+| Issue 首次响应时间 | 0.750 | 0.750 | 1.000 | 1.143 | 1.143 | 1.333 | 1.333 |
+| Bug 类 Issue 处理时间 | 0.667 | 0.667 | 0.875 | 1.000 | 1.000 | 1.250 | 1.250 |
+| PR 处理时间 | 0.667 | 0.667 | 0.875 | 1.000 | 1.000 | 1.250 | 1.250 |
+| Issue 评论频率 | 0.500 | 0.500 | 0.750 | 0.800 | 0.800 | 1.000 | 1.000 |
+| 代码审查评论频率 | 0.500 | 0.500 | 0.750 | 0.800 | 0.800 | 1.000 | 1.000 |
 
-### AHP Analysis Result
+### AHP 分析结果
 
-Metrics Name | Eigenvector | Weight
---- | --- | ---
-Updated Issues Count|   1.380 |	19.721%	
-Close PR Count        | 1.380 |	19.721%
-Issue First Response |  1.006 |	14.372%
-Bug Issue Open Time |   0.901 |	12.876%
-PR Open Time        |   0.901 |	12.876%
-Comment Frequency  |    0.715 |	10.217%
-Code Review Count  |    0.715 |	10.217%
+| 指标名称 | 特征向量 | 权重 |
+| --- | --- | --- |
+| 更新 Issue 数量 | 1.380 | 19.721% |
+| 关闭 PR 数量 | 1.380 | 19.721% |
+| Issue 首次响应时间 | 1.006 | 14.372% |
+| Bug 类 Issue 处理时间 | 0.901 | 12.876% |
+| PR 处理时间 | 0.901 | 12.876% |
+| Issue 评论频率 | 0.715 | 10.217% |
+| 代码审查评论频率 | 0.715 | 10.217% |
 
-### Consistency Test Results
+### 一致性检验结果
 
-Largest Eigenvalue | CI Value | RI Value| CR Value | Consistency Test
---- | --- | --- | --- | ---
-7.002 | 0.000 | 1.360 | 1.360 | PASS
+| 最大特征根 | CI 值 | RI 值 | CR 值 | 一致性检验结果 |
+| --- | --- | --- | --- | --- |
+| 7.002 | 0.000 | 1.360 | 1.360 | PASS |
 
-## Threshold
+## 阈值
 
-The threshold we chose is based on the big-data observations from different types of open source projects.
+我们选择的阈值是基于不同类型开源项目的大数据观测。
 
-# References
+# 参考文献
 
 * [CHAOSS Metric Model: Community Service and Support](https://github.com/chaoss/wg-metrics-models/tree/main/metrics-model-libs/community-service-and-support)
 
-# Contributors
+# 贡献者
 
-## Frontend
+## 前端
 
 * Shengxiang Zhang
 * Feng Zhong
@@ -111,17 +111,18 @@ The threshold we chose is based on the big-data observations from different type
 * Huatian Qin
 * Xingyou Lai
 
-## Backend
+## 后端
 
 * Yehui Wang
 * Chenqi Shan
 * Shengbao Li
 * Huatian Qin
 
-## Metric Model
+## 评估模型
+
 * Yehui Wang
 * Liang Wang
-* Chenqi Shan 
+* Chenqi Shan
 * Shengbao Li
 * Matt Germonprez
 * Sean Goggins

@@ -1,17 +1,17 @@
 ---
-title: Outbound Connectedness
+title: 外部联接
 slug: /metrics-models/robustness/outbound-connectedness
 tags:
-  - Metrics Models
-  - Robustness
-  - Outbound Connectedness
-description: Coming soon!
+  - 评估模型
+  - 稳健性
+  - 外部联接
+description: 即将推出！
 ---
 
-# Outbound Connectedness
+# 外部联接
 
 :::tip
 
-Coming soon!
+即将推出！
 
 :::

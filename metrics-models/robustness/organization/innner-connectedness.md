@@ -1,17 +1,17 @@
 ---
-title: Inner Connectedness
+title: 内部联接
 slug: /metrics-models/robustness/inner-connectedness
 tags:
-  - Metrics Models
-  - Robustness
-  - Inner Connectedness
-description: Coming soon!
+  - 评估模型
+  - 稳健性
+  - 内部联接
+description: 即将推出！
 ---
 
-# Inner Connectedness
+# 内部联接
 
 :::tip
 
-Coming soon!
+即将推出！
 
 :::

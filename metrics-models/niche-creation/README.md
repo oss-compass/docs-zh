@@ -1,31 +1,31 @@
 ---
-title: Niche Creation
-slug: /dimensions-define/niche-creation
+title: 创新力
+slug: /dimensions-define/niche-creatment
 tags:
-  - Metrics Models
-  - Niche Creation
-description: The capacity to create and recognize meaningful diversity and thereby new capabilities.
+ - 评估模型
+ - 创新力
+description: 社区生态具有持续创造多样性创新的能力，并成为社区生态向前演进的动力。
 ---
 
-# Niche Creation:
-Definition: The capacity to create and recognize meaningful diversity and thereby new capabilities.
+# 创新力
 
-# Metrics Models
+定义：社区生态具有持续创造多样性创新的能力，并成为社区生态向前演进的动力。
 
-## [Developer Attraction](./ecological-diversity/developer-attraction.md#developer-attraction)
+# 评估模型
 
-Coming soon!
+## [开发者吸引](./ecological-diversity/developer-attraction.md#developer-attraction)
 
-## [Organizations Activity](./ecological-diversity/organization-activity.md#organizations-activity)
+即将推出！
 
-Metrics Name | Definition | Threshold | Weight
---- | --- | --- | ---
-[Org Count](./ecological-diversity/organization-activity.md#org-count) | Number of organizations to which active code contributors belong in the past 90 days. | 30 | 32.258%
-[Contributor Count](./ecological-diversity/organization-activity.md#contributor-count) | Number of active code contributors with organization affiliation in the past 90 days. | 300 | 25.806%
-[Commit Frequency](./ecological-diversity/organization-activity.md#commit-frequency) | Determine the average number of commits with organization affiliation per week in the past 90 days. | 800 | 25.806%
-[Contribution Last](./ecological-diversity/organization-activity.md#contribution-last) | Total contribution time of all organizations to the community in the past 90 days (weeks). | 200 | 16.129%
+## [组织活跃度](./ecological-diversity/organization-activity.md#organizations-activity)
 
+| 指标名称 | 定义 | 阈值 | 权重 |
+| --- | --- | --- | --- |
+| [组织数量](./ecological-diversity/organization-activity.md#org-count) | 过去 90 天内活跃的代码提交者所属组织的数目。 | 30 | 32.258% |
+| [贡献者数量](./ecological-diversity/organization-activity.md#contributor-count) | 过去 90 天内有组织附属关系的活跃的代码贡献者人数。 | 300 | 25.806% |
+| [代码提交频率](./ecological-diversity/organization-activity.md#commit-frequency) | 过去 90 天内平均每周有组织归属的代码提交次数。 | 800 | 25.806% |
+| [持续贡献](./ecological-diversity/organization-activity.md#contribution-last) | 在过去 90 天所有组织向社区有代码贡献的累计时间（周）。 | 200 | 16.129% |
 
-## [Technological Advancement](./technological-advancement.md#technological-advancement)
+## [技术先进性](./technological-advancement.md#technological-advancement)
 
-Coming soon!
+即将推出！

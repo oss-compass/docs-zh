@@ -1,168 +1,183 @@
 ---
-title: Activity
+title: 活跃度
 slug: /metrics-models/robustness/activity
 tags:
-  - Metrics Models
-  - Robustness
-  - Activity
-description: Describe how active an open source community is.
+ - 评估模型
+ - 稳健性
+ - 活跃度
+description: 描述一个社区或者项目的活跃程度
 ---
 
-# Activity
+# 活跃度
 
-Community Activity is used to describe how active an open source community is.
+活跃度用来描述一个开源社区或者项目的活跃程度。
 
-In order for an open source project to be sustainable, it must continue to be maintained and improved following its initial release. Activity describes how much work is being done on a project over time. High levels of community activity may indicate that a project is sustainable and low levels of community activity may indicate that a project is at risk.
+为了使一个开源项目持续发展，必须在首次发布后进行持续的维护和改进。活动度展示了一个项目随着时间的推移所做的工作有多少。高活跃度的社区可能表明该项目是可持续的，高活跃度的社区可能表明该项目面临风险。
 
-# Metrics in the Metrics Model
+# 评估模型中的指标
 
-## Contributor Count
+## 贡献者数量
 
-* Definition: Determine how many active code commit authors, pr authors, review participants, issue authors, and issue comments participants there are in the past 90 days
-* Weight: 18.01%
-* Threshold: 2000
-* Note: when a person has more than one contributions with different roles in multiple repositories, like code commit author and issue author, we only count once.
+* 定义：过去 90 天中活跃的代码提交者、Pull Request 作者、代码审查者、Issue 作者和 Issue 评论者的数量。
+* 权重：18.01%
+* 阈值：2000
+* 注：当一个人在多个仓库中有多个不同角色的贡献时，例如代码提交者和 Issue 作者，我们只算一次。
 
-## Commit Frequency
-* Definition: Determine the average number of commits per week in the past 90 days.
-* Weight: 18.01%
-* Threshold: 1000
+## 代码提交频率
 
-## Updated Since
-* Definition: Determine the average time per repository since the repository was last updated (in months).
-* Weight: 12.74%
-* Threshold: 0.25 months
+* 定义：过去 90 天内平均每周代码提交次数。
+* 权重：18.01%
+* 阈值：1000
 
-## Organization Count
-* Definition: Number of organizations to which active code contributors belong in the past 90 days
-* Weight: 11.50%
-* Threshold: 10
+## 更新于
 
-## Created Since
-* Definition: Determine how long a repository has existed since it was created (in months).
-* Weight: 7.77%
-* Threshold: 120 months
-* Note: The existence time will be superimposed in the multi-repositories scenario.
+* 定义：确定每个代码仓自上次更新以来的平均时间 (月份)，即多久没更新了。
+* 权重：12.74%
+* 阈值：0.25 个月
 
-## Comment Frequency
-* Definition: Determine the average number of comments per issue created in the last 90 days.
-* Weight: 7.77%
-* Threshold: 5
+## 组织数量
 
-## Code Review Count
-* Definition: Determine the average number of review comments per pull request created in the last 90 days
-* Weight: 4.92%
-* Threshold: 8
+* 定义：过去 90 天内活跃的代码提交者所属组织的数目
+* 权重：11.50%
+* 阈值：10
 
-## Updated Issues Count
-* Definition: Determine the number of issues updated in the last 90 days.
-* Weight: 4.92%
-* Threshold: 2500
+## 创建于
 
-## Recent Releases Count
-* Definition: Determine the number of releases in the last year.
-* Weight: 3.18%
-* Threshold: 12
+* 定义：确定代码仓自创建以来存在了多长时间 (月份)。
+* 权重：7.77%
+* 阈值：120 个月
+* 注：存在时间多仓场景被叠加。
 
-## Maintainer Count
-* Definition: Determine the average number of maintainers per repository.
-* Weight: 2.090%
-* Threshold: 100
-* Note: not ready yet. 
+## Issue 评论频率
 
-## Meeting Count
-* Definition: Determine the number of meetings held in the last 90 days.
-* Weight: 2.090%
-* Threshold: 100
-* Note: not ready yet.
+* 定义：过去 90 天内新建 Issue 的评论平均数（不包含机器人和 Issue 作者本人评论）。
+* 权重：7.77%
+* 阈值：5
 
-## Meeting Attendee Count
-* Definition: Determine the average number of attendees per meeting in the last 90 days.
-* Weight: 2.090%
-* Threshold: 10
-* Note: not ready yet.
+## 代码审查评论频率
 
-## Closed Issues Count
-* Definition: Determine the number of issues closed in the last 90 days.
-* Weight: 4.92%
-* Threshold: 2500
-* Note: it is duplicated with "Updated Issues Count", considerring removing from this model.
+* 定义：过去 90 天内新建 PR 的评论平均数量（不包含机器人和 PR 作者本人评论）。
+* 权重：4.92%
+* 阈值：8
 
+## 更新 Issue 数量
 
-# Metric Model Algorithm
+* 定义：过去 90 天 Issue 更新的数量。
+* 权重：4.92%
+* 阈值：2500
 
-## Weight
+## 最近版本发布次数
 
-We use [AHP](https://en.wikipedia.org/wiki/Analytic_hierarchy_process) to calculate weight of each metric.
+* 定义：过去 12 个月版本发布的数量
+* 权重：3.18%
+* 阈值：12
 
-### AHP Input Data
-Metric Name | Contributor Count | Commit frequency | Updated Since | Org Count | Created Since | Comment Frequency | Code Review Count | Closed Issues Count | Updated Issues Count | Recent Releases Count | Maintainer Count | Meeting Count | Meeting Attendee Count 
---- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
-Contributor Count | 1 | 1 | 2 | 2 | 3 | 3 | 4 | 4 | 4 | 5 | 6 | 6 | 6
-Commit frequency  | 1 | 1 | 2 | 2 | 3 | 3 | 4 | 4 | 4 | 5 | 6 | 6 | 6
-Updated Since  | 0.5 | 0.5 | 1 | 2 | 2 | 2 | 3 | 3 | 3 | 4 | 5 | 5 | 5
-Org Count | 0.5 | 0.5 | 0.5 | 1 | 2 | 2 | 3 | 3 | 3 | 4 | 5 | 5 | 5
-Created Since | 0.333 | 0.333 | 0.5 | 0.5 | 1 | 1 | 2 | 2 | 2 | 3 | 4 | 4 | 4
-Comment Frequency | 0.333 | 0.333 | 0.5 | 0.5 | 1 | 1 | 2 | 2 | 2 | 3 | 4 | 4 | 4
-Code Review Count | 0.25 | 0.25 | 0.333 | 0.333 | 0.5 | 0.5 | 1 | 1 | 1 | 2 | 3 | 3 | 3
-~~Closed Issues Count~~ | 0.25 | 0.25 | 0.333 | 0.333 | 0.5 | 0.5 | 1 | 1 | 1 | 2 | 3 | 3 | 3
-Updated Issues Count | 0.25 | 0.25 | 0.333 | 0.333 | 0.5 | 0.5 | 1 | 1 | 1 | 2 | 3 | 3 | 3
-Recent Releases Count | 0.2 | 0.2 | 0.25 | 0.25 | 0.333 | 0.333 | 0.5 | 0.5 | 0.5 | 1 | 2 | 2 | 2
-Maintainer Count | 0.167 | 0.167 | 0.2 | 0.2 | 0.25 | 0.25 | 0.333 | 0.333 | 0.333 | 0.5 | 1 | 1 | 1
-Meeting Count | 0.167 | 0.167 | 0.2 | 0.2 | 0.25 | 0.25 | 0.333 | 0.333 | 0.333 | 0.5 | 1 | 1 | 1
-Meeting Attendee Count | 0.167 | 0.167 | 0.2 | 0.2 | 0.25 | 0.25 | 0.333 | 0.333 | 0.333 | 0.5 | 1 | 1 | 1
+## 维护者数量
 
-### AHP Analysis Result
+* 过去 90 天活跃的维护者数量
+* 权重：2.090%
+* 阈值：100
+* 注：尚未就绪。
 
-Metrics Name | Eigenvector | Weight
---- | --- | ---
-Contributor Count | 2.341 | 18.009%
-Commit frequency | 2.341 | 18.009%
-Updated Since | 1.657 | 12.742%
-Org Count  | 1.495 | 11.501%
-Created Since | 1.010 | 7.768%
-Comment Frequency | 1.010 | 7.768%
-Code Review Count | 0.639 | 4.919%
-~~Closed Issues Count~~| 0.639 | 4.919%
-Updated Issues Count | 0.639 | 4.919%
-Recent Releases Count| 0.413 | 3.177%
-Maintainer Count | 0.272 | 2.090%
-Meeting Count | 0.272 | 2.090%
-Meeting Attendee Count | 0.272 | 2.090%
+## 会议数量
 
-### Consistency Test Results
+* 定义：过去 90 天内举行会议的次数。
+* 权重：2.090%
+* 阈值：100
+* 注：尚未就绪。
 
-Largest Eigenvalue | CI Value | RI Value| CR Value | Consistency Test
---- | --- | --- | --- | ---
-13.303 | 0.025 | 1.560 | 0.016 | PASS
+## 与会者数量
 
-## Threshold
+* 定义：确定过去 90 天内每次会议的与会者平均人数。
+* 权重：2.090%
+* 阈值：10
+* 注：尚未就绪。
 
-The threshold we chose is based on the big-data observations from different types of open source projects.
+## 关闭 Issue 数量
 
-# References
+* 定义：过去 90 天内关闭 Issue 的数量。
+* 权重：4.92%
+* 阈值：2500
+* 注：它与“更新 Issue 数量”重复，正在考虑从模型中删除。
 
-* [CHAOSS Metric Model: Community Activity](https://github.com/chaoss/wg-metrics-models/tree/main/metrics-model-libs/community-activity)
+# 评估模型算法
 
-# Contributors
-## Frontend
+## 权重
+
+我们使用 [AHP](https://en.wikipedia.org/wiki/Analytic_hierarchy_process) 来计算每个指标的权重。
+
+### AHP 输入数据
+
+| 指标名称 | 贡献者数量 | 代码提交频率 | 更新于 | 组织数量 | 创建于 | Issue 评论频率 | 代码审查评论频率 | 关闭 Issue 数量 | 更新 Issue 数量 | 最近版本发布次数 | 维护者数量 | 会议数量 | 与会者数量 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 贡献者数量 | 1 | 1 | 2 | 2 | 3 | 3 | 4 | 4 | 4 | 5 | 6 | 6 | 6 |
+| 代码提交频率 | 1 | 1 | 2 | 2 | 3 | 3 | 4 | 4 | 4 | 5 | 6 | 6 | 6 |
+| 更新于 | 0.5 | 0.5 | 1 | 2 | 2 | 2 | 3 | 3 | 3 | 4 | 5 | 5 | 5 |
+| 组织数量 | 0.5 | 0.5 | 0.5 | 1 | 2 | 2 | 3 | 3 | 3 | 4 | 5 | 5 | 5 |
+| 创建于 | 0.333 | 0.333 | 0.5 | 0.5 | 1 | 1 | 2 | 2 | 2 | 3 | 4 | 4 | 4 |
+| Issue 评论频率 | 0.333 | 0.333 | 0.5 | 0.5 | 1 | 1 | 2 | 2 | 2 | 3 | 4 | 4 | 4 |
+| 代码审查评论频率 | 0.25 | 0.25 | 0.333 | 0.333 | 0.5 | 0.5 | 1 | 1 | 1 | 2 | 3 | 3 | 3 |
+| ~~关闭 Issue 数量~~ | 0.25 | 0.25 | 0.333 | 0.333 | 0.5 | 0.5 | 1 | 1 | 1 | 2 | 3 | 3 | 3 |
+| 更新 Issue 数量 | 0.25 | 0.25 | 0.333 | 0.333 | 0.5 | 0.5 | 1 | 1 | 1 | 2 | 3 | 3 | 3 |
+| 最近版本发布次数 | 0.2 | 0.2 | 0.25 | 0.25 | 0.333 | 0.333 | 0.5 | 0.5 | 0.5 | 1 | 2 | 2 | 2 |
+| 维护者数量 | 0.167 | 0.167 | 0.2 | 0.2 | 0.25 | 0.25 | 0.333 | 0.333 | 0.333 | 0.5 | 1 | 1 | 1 |
+| 会议数量 | 0.167 | 0.167 | 0.2 | 0.2 | 0.25 | 0.25 | 0.333 | 0.333 | 0.333 | 0.5 | 1 | 1 | 1 |
+| 与会者数量 | 0.167 | 0.167 | 0.2 | 0.2 | 0.25 | 0.25 | 0.333 | 0.333 | 0.333 | 0.5 | 1 | 1 | 1 |
+
+### AHP 分析结果
+
+| 指标名称 | 特征向量 | 权重 |
+| --- | --- | --- |
+| 贡献者数量 | 2.341 | 18.009% |
+| 代码提交频率 | 2.341 | 18.009% |
+| 更新于 | 1.657 | 12.742% |
+| 组织数量 | 1.495 | 11.501% |
+| 创建于 | 1.010 | 7.768% |
+| Issue 评论频率 | 1.010 | 7.768% |
+| 代码审查评论频率 | 0.639 | 4.919% |
+| ~~关闭 Issue 数量~~ | 0.639 | 4.919% |
+| 更新 Issue 数量 | 0.639 | 4.919% |
+| 最近版本发布次数 | 0.413 | 3.177% |
+| 维护者数量 | 0.272 | 2.090% |
+| 会议数量 | 0.272 | 2.090% |
+| 与会者数量 | 0.272 | 2.090% |
+
+### 一致性检验结果
+
+| 最大特征根 | CI 值 | RI 值 | CR 值 | 一致性检验结果 |
+| --- | --- | --- | --- | --- |
+| 13.303 | 0.025 | 1.560 | 0.016 | 通过 |
+
+## 阈值
+
+我们选择的阈值是基于不同类型开源项目的大数据观测。
+
+# 参考文献
+
+* [CHAOSS Metric Model: Organizations Activity](https://github.com/chaoss/wg-metrics-models/tree/main/metrics-model-libs/community-activity)
+
+# 贡献者
+
+## 前端
+
 * Shengxiang Zhang
 * Feng Zhong
 * Chaoqun Huang
 * Huatian Qin
 * Xingyou Lai
 
-## Backend
+## 后端
+
 * Yehui Wang
 * Chenqi Shan
 * Shengbao Li
 * Huatian Qin
 
-## Metric Model
+## 评估模型
+
 * Yehui Wang
 * Jun Zhong
 * Chenqi Shan
 * Matt Germonprez
 * Kevin Lumbard
 * Vinod Ahuja
-

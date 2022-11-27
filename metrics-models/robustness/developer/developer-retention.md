@@ -1,17 +1,17 @@
 ---
-title: Developer Retention
+title: 开发者留存
 slug: /metrics-models/robustness/developer-retention
 tags:
-  - Metrics Models
-  - Robustness
-  - Developer Retention
-description: Coming soon!
+  - 评估模型
+  - 稳健性
+  - 开发者留存
+description: 即将推出！
 ---
 
-# Developer Retention
+# 开发者留存
 
 :::tip
 
-Coming soon!
+即将推出！
 
 :::

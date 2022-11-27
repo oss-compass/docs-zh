@@ -1,17 +1,17 @@
 ---
-title: Code Compliance Guarantee
+title: 代码合规保障
 slug: /metrics-models/productivity/code-compliance-guarantee
 tags:
-  - Metrics Models
-  - Productivity
-  - Code Compliance Guarantee
-description: Coming soon!
+  - 评估模型
+  - 生产力
+  - 代码合规保障
+description: 即将推出！
 ---
 
-# Code Compliance Guarantee
+# 代码合规保障
 
 :::tip
 
-Coming soon!
+即将推出！
 
 :::

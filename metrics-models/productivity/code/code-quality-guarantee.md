@@ -1,132 +1,136 @@
 ---
-title: Code Quality Guarantee
+title: 代码质量保障
 slug: /metrics-models/productivity/code-quality-guarantee
 tags:
-  - Metrics Models
-  - Productivity
-  - Code Quality Guarantee
-description: The measurement of how to guarantee software quality using multiple proxies
+ - 评估模型
+ - 生产力
+ - 代码质量保障
+description: 使用间接指标来评估代码质量保障做得如何
 ---
 
-# Code Quality Guarantee 
+# 代码质量保障
 
-Code, as the final output of a project, is the essence of the entire community's contribution. Code quality guarantee is the measurement of how to guarantee software quality using multiple proxies.
+代码，作为一个软件项目的最终输出件，是整个社区的核心内容。代码质量保障是使用多个代理指标来评估软件质量的保障制度。
 
-# Metrics in the Metrics Model
+# 评估模型中的指标
 
-## Contributor Count
+## 贡献者数量
 
-* Definition: Determine how many active pr creators, code reviewers, commit authors there are in the past 90 days.
-* Weight: 19.987%
-* Threshold: 1000
+* 定义：确定在过去 90 天内有多少活跃的代码提交者、代码审核者和 PR 提交者。
+* 权重：19.987%
+* 阈值：1000
 
-## Commit Frequency
+## 代码提交频率
 
-* Definition: Determine the average number of commits per week in the past 90 days.
-* Weight: 16.363%
-* Threshold: 1000
+* 定义：过去 90 天内平均每周代码提交次数。
+* 权重：16.363%
+* 阈值：1000
 
-## Is Maintained
+## 是否维护
 
-* Definition: Percentage of weeks with at least one code commit in the past 90 days(single repository). Percentage of code repositories with at least one code commit in the last 30 days(multiple repositories).
-* Weight: 13.853%
-* Threshold: 100%
-* Note: definitions of single repository and multiple repositories are differerent. 
+* 定义：在过去 90 天内至少提交了一次代码的周百分比 (单仓场景)。在过去 30 天内至少有一次代码提交记录的的代码仓百分比 (多仓场景)。
+* 权重：13.853%
+* 阈值：100%
+* 注：单个仓库和多个仓库的定义是不同的。
 
-## Commit PR Linked Ratio
+## 代码提交关联 PR 的比率
 
-* Definition: Determine the percentage of new code commit link pull request in the last 90 days. 
-* Weight: 12.612%
-* Threshold: 100%
+* 定义：在过去 90 天内提交的代码链接 PR 的百分比。
+* 权重：12.612%
+* 阈值：100%
 
-## PR Issue Linked Ratio
+## PR 关联 Issue 的比率
 
-* Definition: Determine the percentage of new pull request link issues in the last 90 days. 
-* Weight: 11.319%
-* Threshold: 100%
+* 定义：确定过去 90 天内新建 PR 关联 Issue 的百分比。
+* 权重：11.319%
+* 阈值：100%
 
-## Code Review Ratio
+## 代码审查比率
 
-* Definition: Determine the percentage of code commits with at least one reviewer (not PR creator) in the last 90 days. 
-* Weight: 10.113%
-* Threshold: 100%
+* 定义：确定在过去 90 天内提交代码中，至少包含一名审核者 (不是 PR 创建者) 的百分比。
+* 权重：10.113%
+* 阈值：100%
 
-## Code Merge Ratio
+## 代码合并比率
 
-* Definition: Determine the percentage of PR Mergers and PR authors who are not the same person in the last 90 days of commits. 
-* Weight: 10.113%
-* Threshold: 100%
+* 定义：过去 90 天提交代码中，PR 合并者和 PR 作者不属于同一人的百分比。
+* 权重：10.113%
+* 阈值：100%
 
-## Lines of Code Frequency
+## 代码行数
 
-* Definition: Determine the average number of lines touched (lines added plus lines removed) per week in the past 90 days. 
-* Weight: 5.640%
-* Threshold: 300000
+* 定义：确定在过去 90 天内平均每周提交的代码行数 (增加行数加上删除行数)。
+* 权重：5.640%
+* 阈值：300000
 
-# Metric Model Algorithm
+# 评估模型算法
 
-## Weight
+## 权重
 
-We use [AHP](https://en.wikipedia.org/wiki/Analytic_hierarchy_process) to calculate weight of each metric.
+我们使用 [AHP](https://en.wikipedia.org/wiki/Analytic_hierarchy_process) 来计算每个指标的权重。
 
-### AHP Input Data
+### AHP 输入数据
 
-Metric Name | Contributor Count | Commit Frequency | Is Maintained | Commit PR Linked Ratio | PR Issue Linked Ratio | Code Review Ratio | Code Merge Ratio | Lines of Code Frequency
---- | --- | --- | --- | --- | --- | --- | --- | --- 
-Contributor Count |  1.000 | 1.111	| 1.250	| 1.429	| 1.667	| 2.000	| 2.000	| 5.000
-Commit Frequency |  0.900 | 1.000	| 1.250	| 1.250	| 1.429	| 1.667	| 1.667	| 2.500
-Is Maintained |  0.800 | 0.800	| 1.000	| 1.111	| 1.250	| 1.429	| 1.429	| 2.000
-Commit PR Linked Ratio |  0.700 | 0.800	| 0.900	| 1.000	| 1.111	| 1.250	| 1.250	| 2.000
-PR Issue Linked Ratio |  0.600 | 0.700	| 0.800	| 0.900	| 1.000	| 1.111	| 1.111	| 2.000
-Code Review Ratio |  0.500 | 0.600	| 0.700	| 0.800	| 0.900	| 1.000	| 1.000	| 2.000
-Code Merge Ratio |  0.500 | 0.600	| 0.700	| 0.800	| 0.900	| 1.000	| 1.000	| 2.000
-Lines of Code Frequency | 0.200 | 0.400	| 0.500	| 0.500	| 0.500	| 0.500	| 0.500	| 1.000
+| 指标名称 | 贡献者数量 | 代码提交频率 | 是否维护 | 代码提交关联 PR 的比率 | PR 关联 Issue 的比率 | 代码审查比率 | 代码合并比率 | 代码行数 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 贡献者数量 | 1.000 | 1.111 | 1.250 | 1.429 | 1.667 | 2.000 | 2.000 | 5.000 |
+| 代码提交频率 | 0.900 | 1.000 | 1.250 | 1.250 | 1.429 | 1.667 | 1.667 | 2.500 |
+| 是否维护 | 0.800 | 0.800 | 1.000 | 1.111 | 1.250 | 1.429 | 1.429 | 2.000 |
+| 代码提交关联 PR 的比率 | 0.700 | 0.800 | 0.900 | 1.000 | 1.111 | 1.250 | 1.250 | 2.000 |
+| PR 关联 Issue 的比率 | 0.600 | 0.700 | 0.800 | 0.900 | 1.000 | 1.111 | 1.111 | 2.000 |
+| 代码审查比率 | 0.500 | 0.600 | 0.700 | 0.800 | 0.900 | 1.000 | 1.000 | 2.000 |
+| 代码合并比率 | 0.500 | 0.600 | 0.700 | 0.800 | 0.900 | 1.000 | 1.000 | 2.000 |
+| 代码行数 | 0.200 | 0.400 | 0.500 | 0.500 | 0.500 | 0.500 | 0.500 | 1.000 |
 
-### AHP Analysis Result
+### AHP 分析结果
 
-Metrics Name | Eigenvector | Weight
---- | --- | ---
-Contributor Count |  1.599	| 19.987%	
-Commit Frequency |  1.309	| 16.363%
-Is Maintained |  1.108	| 13.853%
-Commit PR Linked Ratio |  1.009	| 12.612%
-PR Issue Linked Ratio |  0.906	| 11.319%
-Code Review Ratio |  0.809	| 10.113%
-Code Merge Ratio |  0.809	| 10.113%
-Lines of Code Frequency | 0.451	| 5.640%
+| 指标名称 | 特征向量 | 权重 |
+| --- | --- | --- |
+| 贡献者数量 | 1.599 | 19.987% |
+| 代码提交频率 | 1.309 | 16.363% |
+| 是否维护 | 1.108 | 13.853% |
+| 代码提交关联 PR 的比率 | 1.009 | 12.612% |
+| PR 关联 Issue 的比率 | 0.906 | 11.319% |
+| 代码审查比率 | 0.809 | 10.113% |
+| 代码合并比率 | 0.809 | 10.113% |
+| 代码行数 | 0.451 | 5.640% |
 
-### Consistency Test Results
+### 一致性检验结果
 
-Largest Eigenvalue | CI Value | RI Value| CR Value | Consistency Test
---- | --- | --- | --- | ---
-8.034 | 0.005 | 1.410 | 0.003 | PASS
+| 最大特征根 | CI 值 | RI 值 | CR 值 | 一致性检验结果 |
+| --- | --- | --- | --- | --- |
+| 8.034 | 0.005 | 1.410 | 0.003 | 通过 |
 
-## Threshold
+## 阈值
 
-The threshold we chose is based on the big-data observations from different types of open source projects.
+我们选择的阈值是基于不同类型开源项目的大数据观测。
 
-# References
+# 参考文献
 
-* [CHAOSS Metric Model: Community Service and Support](https://github.com/chaoss/wg-metrics-models/tree/main/metrics-model-libs/community-service-and-support)
+* [CHAOSS 度量模型：社区服务和支持](https://github.com/chaoss/wg-metrics-models/tree/main/metrics-model-libs/community-service-and-support)
 
-# Contributors
-## Frontend
+# 贡献者
+
+## 前端
+
 * Shengxiang Zhang
 * Feng Zhong
 * Chaoqun Huang
 * Huatian Qin
 * Xingyou Lai
 
-## Backend
+## 后端
+
 * Yehui Wang
 * Chenqi Shan
 * Shengbao Li
 * Huatian Qin
 
-## Metric Model
+## 评估模型
+
 * Yehui Wang
 * Liang Wang
-* Chenqi Shan 
+* Chenqi Shan
 * Matt Germonprez
 * Sean Goggins
 * Vinod Ahuja

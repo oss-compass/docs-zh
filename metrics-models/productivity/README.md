@@ -1,51 +1,51 @@
 ---
-title: Productivity
+title: 生产力
 slug: /dimensions-define/productivity
 tags:
-  - Metrics Models
-  - Productivity
-description: The efficiency with which an ecosystem or project converts inputs into output.
+ - 评估模型
+ - 生产力
+description: 一个开源生态将投入转化为产出的能力。
 ---
 
-# Productivity
-Definition: The efficiency with which an ecosystem or project converts inputs into output.
+# 生产力
 
-# Metrics Models
+定义：一个开源生态将投入转化为产出的能力。
 
-## [Code Quality Guarantee ](./code/code-quality-guarantee.md#code-quality-guarantee)
+# 评估模型
 
-Metrics Name | Definition | Threshold | Weight
---- | --- | --- | ---
-[Contributor Count](./code/code-quality-guarantee.md#contributor-count) | Determine how many active pr creators, code reviewers, commit authors there are in the past 90 days. | 1000 | 19.987%
-[Commit Frequency](./code/code-quality-guarantee.md#commit-frequency) |Determine the average number of commits per week in the past 90 days.| 1000 | 16.363%
-[Is Maintained](./code/code-quality-guarantee.md#is-maintained) |Percentage of weeks with at least one code commit in the past 90 days(single repository). Percentage of code repositories with at least one code commit in the last 30 days(multiple repositories).| 100% | 13.853%
-[Commit PR Linked Ratio](./code/code-quality-guarantee.md#commit-pr-linked-ratio)  | Determine the percentage of new code commit link pull request in the last 90 days. | 100% |12.612%
-[PR Issue Linked Ratio](./code/code-quality-guarantee.md#pr-issue-linked-ratio) |Determine the percentage of new pull request link issues in the last 90 days. |100%|11.319%
-[Code Review Ratio](./code/code-quality-guarantee.md#code-review-ratio) |Determine the percentage of code commits with at least one reviewer (not PR creator) in the last 90 days.|100%|10.113%
-[Code Merge Ratio](./code/code-quality-guarantee.md#code-merge-ratio) |Determine the percentage of PR Mergers and PR authors who are not the same person in the last 90 days of commits.|100%| 10.113%
-[Lines of Code Frequency](./code/code-quality-guarantee.md#lines-of-code-frequency) |Determine the average number of lines touched (lines added plus lines removed) per week in the past 90 days. |300000| 5.640%
+## [代码质量保障](./code/code-quality-guarantee.md#code-quality-guarantee)
 
-## [Code Security Guarantee](./code/code-security-guarantee.md#code-security-guarantee)
+| 指标名称 | 定 义 | 阈值 | 权重 |
+| --- | --- | --- | --- |
+| [贡献者数量](./code/code-quality-guarantee.md#contributor-count) | 确定在过去 90 天内有多少活跃的代码提交者、代码审核者和 PR 提交者。 | 1000 | 19.987% |
+| [代码提交频率](./code/code-quality-guarantee.md#commit-frequency) | 过去 90 天内平均每周代码提交次数。 | 1000 | 16.363% |
+| [是否维护](./code/code-quality-guarantee.md#is-maintained) | 在过去 90 天内至少提交了一次代码的周百分比 (单仓场景)。在过去 30 天内至少有一次代码提交记录的的代码仓百分比 (多仓场景)。 | 100% | 13.853% |
+| [代码提交关联 PR 的比率](./code/code-quality-guarantee.md#commit-pr-linked-ratio) | 在过去 90 天内提交的代码链接 PR 的百分比。 | 100% | 12.612% |
+| [PR 关联 Issue 的比率](./code/code-quality-guarantee.md#pr-issue-linked-ratio) | 确定过去 90 天内新建 PR 关联 Issue 的百分比。 | 100% | 11.319% |
+| [代码审查比率](./code/code-quality-guarantee.md#code-review-ratio) | 确定在过去 90 天内提交代码中，至少包含一名审核者 (不是 PR 创建者) 的百分比。 | 100% | 10.113% |
+| [代码合并比率](./code/code-quality-guarantee.md#code-merge-ratio) | 过去 90 天提交代码中，PR 合并者和 PR 作者不属于同一人的百分比。 | 100% | 10.113% |
+| [代码行数](./code/code-quality-guarantee.md#lines-of-code-frequency) | 确定在过去 90 天内平均每周提交的代码行数 (增加行数加上删除行数)。 | 300000 | 5.640% |
 
-Coming soon!
+## [代码安全保障](./code/code-security-guarantee.md#code-security-guarantee)
 
+即将推出！
 
-## [Code Compliance Guarantee](./code/code-compliance-guarantee.md#code-compliance-guarantee)
+## [代码合规保障](./code/code-compliance-guarantee.md#code-compliance-guarantee)
 
-Coming soon!
+即将推出！
 
-## [Content](./content.md#content)
+## [文档](./content.md#content)
 
-Coming soon!
+即将推出！
 
-## [Community Service and Support](./community-service-and-support.md#community-service-and-support)
+## [社区服务与支撑](./community-service-and-support.md#community-service-and-support)
 
-Metrics Name | Definition | Threshold | Weight
---- | --- | --- | ---
-[Updated Issues Count](./community-service-and-support.md#updated_issues_count) | Determine the number of issues updated in the last 90 days. | 2000 | 19.721%
-[Close PR Count](./community-service-and-support.md#close_pr_count) |The number of PR accepted and declined in the last 90 days.| 4500 | 19.721%
-[Issue First Response](./community-service-and-support.md#issue_first_response) |Average/Median first comments response (in days) for new issues created in the last 90 days. This excludes bot responses,, the creator's own comment, or an action assigned by the issue. If the issue has been unanswered, the first response time is not counted.| 15 | 14.372%
-[Bug Issue Open Time](./community-service-and-support.md#bug_issue_open_time)  | Average/Median time (days) that bug issues have been opened for issues created in the last 90 days.|60|12.876%
-[PR Open Time](./community-service-and-support.md#pr_open_time) |Average/Median processing time (days) for new change requests created in the last 90 days, including closed/accepted change requests and unresolved change requests.|30|12.876%
-[Comment Frequency](./community-service-and-support.md#comment-frequency) |Determine the average number of comments per issue created in the last 90 days.|5|10.217%
-[Code Review Count](./community-service-and-support.md#code-review-count) |Determine the average number of review comments per pull request created in the last 90 days|8| 10.217%
+| 指标名称 | 定 义 | 阈值 | 权重 |
+| --- | --- | --- | --- |
+| [更新 Issue 数量](./community-service-and-support.md#updated_issues_count) | 过去 90 天 Issue 更新的数量。 | 2000 | 19.721% |
+| [关闭 PR 数量](./community-service-and-support.md#close_pr_count) | 过去 90 天内合并和拒绝的 PR 数量。 | 4500 | 19.721% |
+| [Issue 首次响应时间](./community-service-and-support.md#issue_first_response) | 过去 90 天新建 Issue 首次响应时间的均值和中位数（天）。这不包括机器人响应、创建者自己的评论或 Issue 的分配动作（action）。如果 Issue 一直未被响应，该 Issue 不被算入统计。 | 15 | 14.372% |
+| [Bug 类 Issue 处理时间](./community-service-and-support.md#bug_issue_open_time) | 过去 90 天新建的 Bug 类 Issue 处理时间的均值和中位数（天），包含已经关闭的 Issue 以及未解决的 Issue。 | 60 | 12.876% |
+| [PR 处理时间](./community-service-and-support.md#pr_open_time) | 过去 90 天新建 PR 的处理时间的均值和中位数（天），包含已经关闭的 PR 以及未解决的 PR | 30 | 12.876% |
+| [Issue 评论频率](./community-service-and-support.md#comment-frequency) | 过去 90 天内新建 Issue 的评论平均数（不包含机器人和 Issue 作者本人评论）。 | 5 | 10.217% |
+| [代码审查评论频率](./community-service-and-support.md#code-review-count) | 过去 90 天内新建 PR 的评论平均数量（不包含机器人和 PR 作者本人评论）。 | 8 | 10.217% |

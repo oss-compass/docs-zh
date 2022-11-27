@@ -1,17 +1,17 @@
 ---
-title: Content
+title: 文档
 slug: /metrics-models/productivity/content
 tags:
-  - Metrics Models
-  - Productivity
-  - Content
-description: Coming soon!
+  - 评估模型
+  - 生产力
+  - 文档
+description: 即将推出！
 ---
 
-# Content
+# 文档
 
 :::tip
 
-Coming soon!
+即将推出！
 
 :::

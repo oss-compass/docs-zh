@@ -1,17 +1,17 @@
 ---
-title: Organization Collaboration Relationships
+title: 组织协作关系
 slug: /metrics-models/robustness/organization-collaboration-relationships
 tags:
-  - Metrics Models
-  - Robustness
-  - Organization Collaboration Relationships
-description: Coming soon!
+  - 评估模型
+  - 稳健性
+  - 组织协作关系
+description: 即将推出！
 ---
 
-# Organization Collaboration Relationships
+# 组织协作关系
 
 :::tip
 
-Coming soon!
+即将推出！
 
 :::

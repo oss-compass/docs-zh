@@ -1,50 +1,51 @@
 ---
-title: Robustness
+title: 稳健性
 slug: /dimensions-define/robustness
 tags:
-  - Metrics Models
-  - Robustness
-description: The capability of an ecosystem or project to face and survive disruptions.Determine
+ - Metrics Models
+ - 稳健性
+description: 生态系统面对内部或者外部冲突自我恢复的能力。
 ---
 
-# Robustness
-Definition: The capability of an ecosystem or project to face and survive disruptions.Determine
+# 稳健性
 
-# Metrics Models
+定义：生态系统面对内部或者外部冲突自我恢复的能力。
 
-## [Activity](./activity.md#activity)
+# 评估模型
 
-Metrics Name | Definition | Threshold | Weight
---- | --- | --- | ---
-[Contributor Count](./activity.md#contributor-count) | Determine how many active code commit authors, pr authors, review participants, issue authors, and issue comments participants there are in the past 90 days | 2000 | 18.009%
-[Commit frequency](./activity.md#commit-frequency) |Determine the average number of commits per week in the past 90 days.| 1000 | 18.009%
-[Updated Since](./activity.md#updated-since) |Determine the average time per repository since the repository was last updated (in months).| 0.25 | 12.742%
-[Org Count](./activity.md#organization-count)  | Number of organizations to which active code contributors belong in the past 90 days. |10|11.501%
-[Created Since](./activity.md#created-since) |Determine how long a repository has existed since it was created (in months).|120|7.768%
-[Comment Frequency](./activity.md#comment-frequency) |Determine the average number of comments per issue created in the last 90 days.|5|7.768%
-[Code Review Count](./activity.md#code-review-count) |Determine the average number of review comments per pull request created in the last 90 days|8| 4.919%
-[Updated Issues Count](./activity.md#updated-issues-count) |Determine the number of issues updated in the last 90 days.|2500|4.919%
-[Recent Releases Count](./activity.md#recent-releases-count)|Determine the number of releases in the last year.|12| 3.177%
-[Maintainer Count](./activity.md#maintainer-count) | Determine the average number of maintainers per repository.|100|2.090%
-[Meeting Count](./activity.md#meeting-count) | Determine the number of meetings held in the last 90 days.| 100| 2.090%
-[Meeting Attendee Count](./activity.md#meeting-attendee-count) | Determine the average number of attendees per meeting in the last 90 days.|10| 2.090%
+## [活跃度](./activity.md#activity)
 
-## [Developer Convertion](./developer/developer-convertion.md#developer-convertion)
+| 指标名称 | 定 义 | 阈值 | 权重 |
+| --- | --- | --- | --- |
+| [贡献者数量](./activity.md#contributor-count) | 定义：过去 90 天中活跃的代码提交者、Pull Request 作者、代码审查者、Issue 作者和 Issue 评论者的数量。 | 2000 | 18.009% |
+| [代码提交频率](./activity.md#commit-frequency) | 过去 90 天内平均每周代码提交次数。 | 1000 | 18.009% |
+| [更新于](./activity.md#updated-since) | 确定每个代码仓自上次更新以来的平均时间 (月份)，即多久没更新了。 | 0.25 | 12.742% |
+| [组织数量](./activity.md#organization-count) | 过去 90 天内活跃的代码提交者所属组织的数目。| 10 | 11.501% |
+| [创建于](./activity.md#created-since) | 确定代码仓自创建以来存在了多长时间 (月份)。 | 120 | 7.768% |
+| [Issue 评论频率](./activity.md#comment-frequency) | 过去 90 天内新建 Issue 的评论平均数（不包含机器人和 Issue 作者本人评论）。 | 5 | 7.768% |
+| [代码审查评论频率](./activity.md#code-review-count) | 过去 90 天内新建 PR 的评论平均数量（不包含机器人和 PR 作者本人评论）。 | 8 | 4.919% |
+| [更新 Issue 数量](./activity.md#updated-issues-count) | 过去 90 天 Issue 更新的数量。 | 2500 | 4.919% |
+| [最近版本发布次数](./activity.md#recent-releases-count) | 过去 12 个月版本发布的数量 | 12 | 3.177% |
+| [维护者数量](./activity.md#maintainer-count) | 过去 90 天活跃的维护者数量 | 100 | 2.090% |
+| [会议数量](./activity.md#meeting-count) | 过去 90 天内举行会议的次数。 | 100 | 2.090% |
+| [与会者数量](./activity.md#meeting-attendee-count) | 确定过去 90 天内每次会议的与会者平均人数。 | 10 | 2.090% |
 
-Coming soon!
+## [开发者转换](./developer/developer-convertion.md#developer-convertion)
 
-## [Developer Retention](./developer/developer-retention.md#developer-retention)
+即将推出！
 
-Coming soon!
+## [开发者留存](./developer/developer-retention.md#developer-retention)
 
-## [Inner Connectedness](./organization/innner-connectedness.md#inner-connectedness)
+即将推出！
 
-Coming soon!
+## [内部联接](./organization/innner-connectedness.md#inner-connectedness)
 
-## [Organization Collaboration Relationships](./organization/organization-collaboration-relationships.md#organization-collaboration-relationships)
+即将推出！
 
-Coming soon!
+## [组织协作关系](./organization/organization-collaboration-relationships.md#organization-collaboration-relationships)
 
-## [Outbound Connectedness](./organization/outbound-connectedness.md)
+即将推出！
 
-Coming soon!
+## [外部联接](./organization/outbound-connectedness.md)
+
+即将推出！
