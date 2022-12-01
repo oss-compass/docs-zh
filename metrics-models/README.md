@@ -10,7 +10,7 @@
 
 | 评估模型名称 | 描述 |
 | --- | --- |
-| [代码质量保障](./productivity/code/code-quality-guarantee.md#code-quality-guarantee) | 代码，作为一个软件项目的最终输出件，是整个社区的核心内容。代码质量保障是使用多个代理指标来评估软件质量的保障制度。 |
+| [开发协作管理](./productivity/development-collaboration-management.md) | 使用间接指标来评估开发流程管理，社区协作式开发做得如何。 |
 | [代码安全保障](./productivity/code/code-security-guarantee.md#code-security-guarantee) | 即将推出！ |
 | [代码合规保障](./productivity/code/code-compliance-guarantee.md#code-compliance-guarantee) | 即将推出！ |
 | [文档](./productivity/content.md#content) | 即将推出！ |
