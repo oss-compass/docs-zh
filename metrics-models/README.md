@@ -10,7 +10,7 @@
 
 | 评估模型名称 | 描述 |
 | --- | --- |
-| [开发协作管理](./productivity/development-collaboration-management.md) | 使用间接指标来评估开发流程管理，社区协作式开发做得如何。 |
+| [协作开发指数](./productivity/collaboration-development-index.md) | 使用间接指标来评估开发流程管理，社区协作式开发做得如何。 |
 | [代码安全保障](./productivity/code/code-security-guarantee.md#code-security-guarantee) | 即将推出！ |
 | [代码合规保障](./productivity/code/code-compliance-guarantee.md#code-compliance-guarantee) | 即将推出！ |
 | [文档](./productivity/content.md#content) | 即将推出！ |
