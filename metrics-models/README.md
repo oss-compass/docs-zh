@@ -11,10 +11,10 @@
 | 评估模型名称 | 描述 |
 | --- | --- |
 | [协作开发指数](./productivity/collaboration-development-index.md) | 使用间接指标来评估开发流程管理，社区协作式开发做得如何。 |
+| [社区服务与支撑](./productivity/community-service-and-support.md#community-service-and-support) | 用于评估开发者在贡献过程中，所能直接感知到社区提供的服务和支撑做得如何。 |
 | [代码安全保障](./productivity/code/code-security-guarantee.md#code-security-guarantee) | 即将推出！ |
 | [代码合规保障](./productivity/code/code-compliance-guarantee.md#code-compliance-guarantee) | 即将推出！ |
 | [文档](./productivity/content.md#content) | 即将推出！ |
-| [社区服务与支撑](./productivity/community-service-and-support.md#community-service-and-support) | 用于评估开发者在贡献过程中，所能直接感知到社区提供的服务和支撑做得如何。 |
 
 ## [**稳健性**](./robustness/README.md)
 
@@ -35,8 +35,8 @@
 
 | 评估模型名称 | 描述 |
 | --- | --- |
-| [开发者吸引](./niche-creation/ecological-diversity/developer-attraction.md#developer-attraction) | 即将推出！ |
 | [组织活跃度](./niche-creation/ecological-diversity/organization-activity.md#organizations-activity) | 评估一个社区中组织的活跃程度。 |
+| [开发者吸引](./niche-creation/ecological-diversity/developer-attraction.md#developer-attraction) | 即将推出！ |
 | [技术先进性](./niche-creation/technological-advancement.md#technological-advancement) | 即将推出！ |
 
 ## 参考文献
