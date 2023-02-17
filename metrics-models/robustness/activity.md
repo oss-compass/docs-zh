@@ -174,7 +174,7 @@ description: 描述一个社区或者项目的活跃程度
 
 # 参考文献
 
-* [CHAOSS Metric Model: Organizations Activity](https://github.com/chaoss/wg-metrics-models/tree/main/metrics-model-libs/community-activity)
+* [CHAOSS 度量模型：社区活跃度](https://chaoss.community/kb/metrics-model-community-activity/)
 
 # 贡献者
 

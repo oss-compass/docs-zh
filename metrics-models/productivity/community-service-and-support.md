@@ -113,7 +113,7 @@ Bug类Issue代表了社区对需要快速解决的Issue的处理效率。我们�
 
 # 参考文献
 
-* [CHAOSS Metric Model: Community Service and Support](https://github.com/chaoss/wg-metrics-models/tree/main/metrics-model-libs/community-service-and-support)
+* [CHAOSS 度量模型：社区服务与支撑](https://chaoss.community/kb/metrics-model-community-service-and-support/)
 
 # 贡献者
 
