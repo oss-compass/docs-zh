@@ -124,7 +124,7 @@ description: 使用间接指标来评估开发流程管理，社区协作式开�
 
 # 参考文献
 
-* [CHAOSS 度量模型：代码质量保障](https://github.com/chaoss/wg-metrics-models/tree/main/metrics-model-libs/code-quality-guarantee)
+* [CHAOSS 度量模型：协作开发指数](https://chaoss.community/kb/metrics-model-collaboration-development-index/)
 
 # 贡献者
 

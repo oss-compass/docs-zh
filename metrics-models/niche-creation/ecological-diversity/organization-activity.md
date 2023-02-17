@@ -80,10 +80,10 @@ description: 评估一个社区中组织的活跃程度。
 
 我们选择的阈值是基于不同类型开源项目的大数据观测。
 
-# 参考文献
+<!-- # 参考文献
 
-* [CHAOSS Metric Model: Organizations Activity](https://github.com/chaoss/wg-metrics-models/tree/main/metrics-model-libs/organization-activity)
-
+* [CHAOSS Metric Model: Organizations Activity](https://github.com/chaoss/wg-metrics-models/tree/main/metrics-model-libs/organization-activity) 
+-->
 # 贡献者
 
 ## 前端
