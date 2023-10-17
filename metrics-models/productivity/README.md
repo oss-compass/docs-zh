@@ -32,9 +32,9 @@ description: 一个开源生态将投入转化为产出的能力。
 | --- | --- | --- | --- |
 | [更新 Issue 数量](./community-service-and-support.md#更新-issue-数量) | 过去 90 天 Issue 更新的数量。 | 2000 | 19.721% |
 | [关闭 PR 数量](./community-service-and-support.md#关闭-pr-数量) | 过去 90 天内合并和拒绝的 PR 数量。 | 4500 | 19.721% |
-| [Issue 首次响应时间](./community-service-and-support.md#issue-首次响应时间) | 过去 90 天新建 Issue 首次响应时间的均值和中位数（天）。这不包括机器人响应、创建者自己的评论或 Issue 的分配动作（action）。如果 Issue 一直未被响应，该 Issue 不被算入统计。 | 15 | 14.372% |
-| [Bug 类 Issue 处理时间](./community-service-and-support.md#bug-类-issue-处理时间) | 过去 90 天新建的 Bug 类 Issue 处理时间的均值和中位数（天），包含已经关闭的 Issue 以及未解决的 Issue。 | 60 | 12.876% |
-| [PR 处理时间](./community-service-and-support.md#pr-处理时间) | 过去 90 天新建 PR 的处理时间的均值和中位数（天），包含已经关闭的 PR 以及未解决的 PR | 30 | 12.876% |
+| [Issue 首次响应时间](./community-service-and-support.md#issue-首次响应时间) | 过去 90 天新建 Issue 首次响应时间的均值和中位数（天）。这不包括机器人响应、创建者自己的评论或 Issue 的分配动作（action）。如果 Issue 一直未被响应，该 Issue 不被算入统计。 | 15 | -14.372% |
+| [Bug 类 Issue 处理时间](./community-service-and-support.md#bug-类-issue-处理时间) | 过去 90 天新建的 Bug 类 Issue 处理时间的均值和中位数（天），包含已经关闭的 Issue 以及未解决的 Issue。 | 60 | -12.876% |
+| [PR 处理时间](./community-service-and-support.md#pr-处理时间) | 过去 90 天新建 PR 的处理时间的均值和中位数（天），包含已经关闭的 PR 以及未解决的 PR | 30 | -12.876% |
 | [Issue 评论频率](./community-service-and-support.md#issue-评论频率) | 过去 90 天内新建 Issue 的评论平均数（不包含机器人和 Issue 作者本人评论）。 | 5 | 10.217% |
 | [代码审查评论频率](./community-service-and-support.md#代码审查评论频率) | 过去 90 天内新建 PR 的评论平均数量（不包含机器人和 PR 作者本人评论）。 | 8 | 10.217% |
 
