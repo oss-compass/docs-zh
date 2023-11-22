@@ -20,11 +20,6 @@
 | 评估模型名称 | 描述 |
 | --- | --- |
 | [活跃度](./robustness/activity.md#activity) | 活跃度用来描述一个开源社区或者项目的活跃程度。 |
-| [开发者转换](./robustness/developer/developer-convertion.md#developer-convertion) | 即将推出！ |
-| [开发者留存](./robustness/developer/developer-retention.md#developer-retention) | 即将推出！ |
-| [内部联接](./robustness/organization/innner-connectedness.md#inner-connectedness) | 即将推出！ |
-| [组织协作关系](./robustness/organization/organization-collaboration-relationships.md#organization-collaboration-relationships) | 即将推出！ |
-| [外部联接](./robustness/organization/outbound-connectedness.md) | 即将推出！ |
 
 ## [**创新力**](./niche-creation/README.md)
 
