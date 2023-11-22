@@ -28,8 +28,6 @@
 | 评估模型名称 | 描述 |
 | --- | --- |
 | [组织活跃度](./niche-creation/ecological-diversity/organization-activity.md#organizations-activity) | 评估一个社区中组织的活跃程度。 |
-| [开发者吸引](./niche-creation/ecological-diversity/developer-attraction.md#developer-attraction) | 即将推出！ |
-| [技术先进性](./niche-creation/technological-advancement.md#technological-advancement) | 即将推出！ |
 
 ## 参考文献
 
