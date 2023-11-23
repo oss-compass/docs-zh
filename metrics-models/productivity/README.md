@@ -38,14 +38,3 @@ description: 一个开源生态将投入转化为产出的能力。
 | [Issue 评论频率](./community-service-and-support.md#issue-评论频率)               | 过去 90 天内新建 Issue 的评论平均数（不包含机器人和 Issue 作者本人评论）。                                                                                                 | 5    | 10.217%  |
 | [代码审查评论频率](./community-service-and-support.md#代码审查评论频率)           | 过去 90 天内新建 PR 的评论平均数量（不包含机器人和 PR 作者本人评论）。                                                                                                     | 8    | 10.217%  |
 
-## [代码安全保障](./code/code-security-guarantee.md#code-security-guarantee)
-
-即将推出！
-
-## [代码合规保障](./code/code-compliance-guarantee.md#code-compliance-guarantee)
-
-即将推出！
-
-## [文档](./content.md#content)
-
-即将推出！

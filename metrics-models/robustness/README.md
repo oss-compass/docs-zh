@@ -30,22 +30,3 @@ description: 生态系统面对内部或者外部冲突自我恢复的能力。
 | [会议数量](./activity.md#会议数量) | 过去 90 天内举行会议的次数。 | 100 | 2.090% |
 | [与会者数量](./activity.md#与会者数量) | 确定过去 90 天内每次会议的与会者平均人数。 | 10 | 2.090% |
 
-## [开发者转换](./developer/developer-convertion.md#developer-convertion)
-
-即将推出！
-
-## [开发者留存](./developer/developer-retention.md#developer-retention)
-
-即将推出！
-
-## [内部联接](./organization/innner-connectedness.md#inner-connectedness)
-
-即将推出！
-
-## [组织协作关系](./organization/organization-collaboration-relationships.md#organization-collaboration-relationships)
-
-即将推出！
-
-## [外部联接](./organization/outbound-connectedness.md)
-
-即将推出！
