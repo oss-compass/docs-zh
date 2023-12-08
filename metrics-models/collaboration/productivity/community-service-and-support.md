@@ -1,8 +1,9 @@
 ---
 title: 社区服务与支撑
-slug: /metrics-models/productivity/community-service-and-support
+slug: /metrics-models/collaboration/productivity/community-service-and-support
 tags:
  - 评估模型
+ - 协作
  - 生产力
  - 社区服务与支撑
 description: 用于评估开发者在贡献过程中，所能直接感知到社区提供的服务和支撑做得如何。

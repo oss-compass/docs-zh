@@ -1,8 +1,9 @@
 ---
 title: 组织活跃度
-slug: /metrics-models/niche-creation/organization-activity
+slug: /metrics-models/collaboration/niche-creation/organization-activity
 tags:
   - 评估模型
+  - 协作
   - 创新力
   - 组织活跃度
 description: 评估一个社区中组织的活跃程度。

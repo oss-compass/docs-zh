@@ -1,8 +1,9 @@
 ---
 title: 活跃度
-slug: /metrics-models/robustness/activity
+slug: /metrics-models/collaboration/robustness/activity
 tags:
   - 评估模型
+  - 协作
   - 稳健性
   - 活跃度
 description: 描述一个社区或者项目的活跃程度

@@ -1,8 +1,9 @@
 ---
-title: 创新力
-slug: /dimensions-define/niche-creatment
+title: 协作-创新力
+slug: /dimensions-define/collaboration/niche-creatment
 tags:
  - 评估模型
+ - 协作
  - 创新力
 description: 社区生态具有持续创造多样性创新的能力，并成为社区生态向前演进的动力。
 ---

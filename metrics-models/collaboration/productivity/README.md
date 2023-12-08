@@ -1,8 +1,9 @@
 ---
-title: 生产力
-slug: /dimensions-define/productivity
+title: 协作-生产力
+slug: /dimensions-define/collaboration/productivity
 tags:
   - 评估模型
+  - 协作
   - 生产力
 description: 一个开源生态将投入转化为产出的能力。
 ---

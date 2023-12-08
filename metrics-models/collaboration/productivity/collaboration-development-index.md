@@ -1,8 +1,9 @@
 ---
 title: 协作开发指数
-slug: /metrics-models/productivity/collaboration-development-index
+slug: /metrics-models/collaboration/productivity/collaboration-development-index
 tags:
   - 评估模型
+  - 协作
   - 生产力
   - 协作开发指数
 description: 使用间接指标来评估开发流程管理，社区协作式开发做得如何
