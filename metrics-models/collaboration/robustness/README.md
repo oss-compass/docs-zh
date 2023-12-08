@@ -1,8 +1,9 @@
 ---
 title: 稳健性
-slug: /dimensions-define/robustness
+slug: /dimensions-define/collaboration/robustness
 tags:
  - Metrics Models
+ - 协作
  - 稳健性
 description: 生态系统面对内部或者外部冲突自我恢复的能力。
 ---
