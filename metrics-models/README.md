@@ -1,6 +1,8 @@
 # 开源生态评估体系
 
-生态系统是用来描述站在生态学背景下的开源社区的健康状态。我们创建了三个最高级别的维度来描述开源生态评估：生产力、稳健性和创新力。
+生态系统是用来描述站在生态学背景下的开源社区的健康状态。我们构建了一个[评估体系的三维空间](https://compass.gitee.com/zh/blog/2023/12/09/open-source-eco2/open-source-eco2)，包括开源生态、“协作、人、软件”和评估模型。
+
+![image](https://github.com/oss-compass/docs-zh/assets/53640896/25685eb6-505e-4f20-a01c-8b666ce7b00a)
 
 # 维度
 
@@ -29,7 +31,7 @@
 | --- | --- |
 | [组织活跃度](./collaboration/niche-creation/organization-activity.md#organizations-activity) | 评估一个社区中组织的活跃程度。 |
 
-## [**贡献值-生产力**](./people/productivity/README.md)
+## [**贡献者-生产力**](./people/productivity/README.md)
 
 定义：一个开源生态将投入转化为产出的能力。
 
