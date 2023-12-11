@@ -106,8 +106,8 @@ tags:
 
 # 参考文献
 
-- [开源生态评估与度量的思考（一）——演进与趋势](https://compass.gitee.com/zh/blog/2023/12/09/open-source-eco1/open-source-eco1)
-- [开源生态评估与度量的思考（二）——评估体系的多维空间](https://compass.gitee.com/zh/blog/2023/12/09/open-source-eco2/open-source-eco2)
+- [开源生态评估与度量的思考（一）——演进与趋势](https://compass.gitee.com/zh/blog/2023/12/07/open-source-eco1/open-source-eco1)
+- [开源生态评估与度量的思考（二）——评估体系的多维空间](https://compass.gitee.com/zh/blog/2023/12/08/open-source-eco2/open-source-eco2)
 - [开源生态评估与度量的思考（三）——贡献者的动与静](https://compass.gitee.com/zh/blog/2023/12/09/open-source-eco3/open-source-eco3)
 
 # 贡献者
