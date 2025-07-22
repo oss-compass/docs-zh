@@ -42,6 +42,18 @@
 | [贡献者角色](./people/productivity/contributor-role-persona.md) |  |
 
 
+## [**软件制品-稳健性**](./people/productivity/README.md)
+
+定义：生态系统面对内部或者外部冲突自我恢复的能力。
+
+| 评估模型名称 | 描述 |
+| --- | --- |
+| [安全模型 Scorecard](./software_artifact/robustness/scorecard.md) | 基于 OpenSSF Scorecard 的开源项目安全评估模型 |
+| [安全模型 Criticality Score](./software_artifact/robustness/criticality_score.md) | 评估开源项目影响力和重要性的关键性评分模型  |
+| [安全模型 CII 最佳实践徽章](./software_artifact/robustness/cii_best_badge.md) | 用于评估开源项目是否采用了一套以安全为重点的最佳开发实践 |
+
+
+
 ## 参考文献
 
 * [Open Source Community Health: Analytical Metrics and Their Corresponding Narratives](https://ieeexplore.ieee.org/abstract/document/9474775) 2021, Sean Goggins; Kevin Lumbard; Matt Germonprez
