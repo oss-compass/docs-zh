@@ -120,7 +120,7 @@ description: 评估开源项目的影响力和重要性的关键性评分模型
 
 开源项目的关键性评分定义了项目的影响力和重要性。它是一个介于0（最不关键）和1（最关键）之间的数字。该评分基于[Rob Pike](https://github.com/robpike)提出的[算法](https://github.com/ossf/criticality_score/blob/main/Quantifying_criticality_algorithm.pdf)：
 
-<img src="https://raw.githubusercontent.com/ossf/criticality_score/main/images/formula.png" width="359" height="96">
+<img src="https://raw.githubusercontent.com/ossf/criticality_score/main/images/formula.png" width="359" height="96" />
 
 其中：
 - αi 是每个指标的权重
