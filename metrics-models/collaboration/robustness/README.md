@@ -1,4 +1,6 @@
 ---
+id: collaboration-robustness-overview
+sidebar_label: 概览
 title: 稳健性
 slug: /dimensions-define/collaboration/robustness
 tags:

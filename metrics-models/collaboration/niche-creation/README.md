@@ -1,4 +1,6 @@
 ---
+id: collaboration-niche-creation-overview
+sidebar_label: 概览
 title: 协作-创新力
 slug: /dimensions-define/collaboration/niche-creatment
 tags:

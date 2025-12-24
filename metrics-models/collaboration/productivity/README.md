@@ -1,6 +1,8 @@
 ---
+id: collaboration-productivity-overview
 title: 协作-生产力
 slug: /dimensions-define/collaboration/productivity
+sidebar_label: 概览
 tags:
   - 评估模型
   - 协作

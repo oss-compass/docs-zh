@@ -1,4 +1,6 @@
 ---
+id: software-artifact-robustness-overview
+sidebar_label: 概览
 title: 软件制品-稳健性
 slug: /dimensions-define/software_artifact/robustness
 tags:

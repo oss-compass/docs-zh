@@ -1,5 +1,7 @@
 ---
+id: people-productivity-overview
 title: 贡献者-生产力
+sidebar_label: 概览
 slug: /dimensions-define/people/productivity
 tags:
   - 评估模型
