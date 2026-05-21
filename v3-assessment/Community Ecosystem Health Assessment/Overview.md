@@ -10,19 +10,19 @@
 
 评估社区的活跃程度和吸引力，包括社区流行度、贡献活跃度和开发者基数。
 
-详细指标请参考：[社区活力](./Community Vitality.md)
+详细指标请参考：[社区活力](./Community%20Vitality.md)
 
 ## 协作效率
 
 评估社区的协作质量和响应效率，包括响应及时性和协作开发质量。
 
-详细指标请参考：[协作效率](./Collaboration Efficiency.md)
+详细指标请参考：[协作效率](./Collaboration%20Efficiency.md)
 
 ## 开放治理
 
 评估社区的治理开放性和包容性，包括组织开放治理和个人开放治理。
 
-详细指标请参考：[开放治理](./Open Governance.md)
+详细指标请参考：[开放治理](./Open%20Governance.md)
 
 # 评估意义
 

@@ -10,19 +10,19 @@
 
 评估源代码的安全管理，包括合法合规性和安全管理措施。
 
-详细指标请参考：[源码管理](./Source Code Management.md)
+详细指标请参考：[源码管理](./Source%20Code%20Management.md)
 
 ## 开发与构建
 
 评估开发过程的安全性和可信度，包括代码审查质量、开发文档质量和可信构建。
 
-详细指标请参考：[开发与构建](./Development and Build.md)
+详细指标请参考：[开发与构建](./Development%20and%20Build.md)
 
 ## 发布与维护
 
 评估发布过程的安全性和维护管理，包括发布质量和维护管理措施。
 
-详细指标请参考：[发布与维护](./Release and Maintenance.md)
+详细指标请参考：[发布与维护](./Release%20and%20Maintenance.md)
 
 # 评估意义
 
