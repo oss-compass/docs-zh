@@ -23,11 +23,12 @@
 
 **开发者基数**
 
-| 度量指标         | 地址                                                                                                                                  | 阈值    | 权重 |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------- | ---- |
-| 社区贡献者数量   | [/api/v3/developer_base/contributor_count](https://oss-compass.org/dataHub#api_v3_developer_base_contributor_count)                   | 2000 个 | 0.33 |
-| 代码贡献者数量   | [/api/v3/developer_base/code_contributor_count](https://oss-compass.org/dataHub#api_v3_developer_base_code_contributor_count)         | 1000 个 | 0.33 |
-| 非代码贡献者数量 | [/api/v3/developer_base/non_code_contributor_count](https://oss-compass.org/dataHub#api_v3_developer_base_non_code_contributor_count) | 1000 个 | 0.34 |
+| 度量指标     | 地址                                                                                                                                  | 阈值     | 权重   |
+|----------| ------------------------------------------------------------------------------------------------------------------------------------- |--------|------|
+| 社区贡献者数量  | [/api/v3/developer_base/contributor_count](https://oss-compass.org/dataHub#api_v3_developer_base_contributor_count)                   | 2000 个 | 0.33 |
+| 代码贡献者数量  | [/api/v3/developer_base/code_contributor_count](https://oss-compass.org/dataHub#api_v3_developer_base_code_contributor_count)         | 1000 个 | 0.33 |
+| 非代码贡献者数量 | [/api/v3/developer_base/non_code_contributor_count](https://oss-compass.org/dataHub#api_v3_developer_base_non_code_contributor_count) | 500 个  | 0.17 |
+| 社区关注者数量  | [/api/v3/developer_base/follower_count](https://oss-compass.org/dataHub#api_v3_developer_base_follower_count)                         | 1000      | 0.17   |
 
 # 评估模型中的指标
 
@@ -117,11 +118,30 @@ Issue 评论数量反映了社区的问题讨论活跃度。积极的 Issue 评�
 
 ### 非代码贡献者数量
 
-- 定义：统计周期内，在社区中有任何贡献行为包括但不限于 Issue 创建/评论、参与项目讨论等，但未发生任何代码相关行为的用户数。
-- 权重：34%
+- 定义：统计周期内，在社区中有任何贡献行为，但未发生代码相关贡献的用户数。
+- 权重：17%
+- 阈值：500 个
+
+非代码贡献者数量反映了社区的多元化参与程度。该指标统计了社区中未参与代码提交、代码合入等直接代码生产活动，但通过项目维护、Issue管理和社区互动等方式参与项目发展的贡献者。根据贡献行为类型，可划分为以下角色：
+
+- 文档维护者：负责维护项目相关文字信息，包括完善 Issue 和 Pull Request 描述内容、修改标题信息。
+
+- Issue 管理者：负责管理 Issue 生命周期，包括创建Issue、分类标记、状态跟踪、关闭Issue以及关联 PR 。
+
+- PR 协作管理者：负责 PR 协作流程管理，包括任务分配、状态维护、标签管理。
+
+- 社区互动参与者：通过Issue 评论、项目讨论等轻量级社区行为参与项目贡献。
+
+较高的非代码贡献者数量通常意味着社区参与门槛更低，贡献形式更加多样，生态开放性和包容性更强。
+
+
+### 社区关注者数量
+
+- 定义：统计周期内，在社区中Star和Fork的用户数。
+- 权重：17%
 - 阈值：1000 个
 
-非代码贡献者数量反映了社区的多元化参与程度。该指标剔除了所有直接参与代码产出的贡献者，从而量化纯粹由 Issue 互动、项目管理、项目讨论和社区轻量参与构成的多元化贡献群体。该指标能够反映社区的包容性和参与门槛。
+社区关注者数量是衡量项目社区影响力和外部认可度的指标。关注者包括通过 Star 表达项目认可和持续关注意愿的用户，以及通过 Fork 进行项目复制和二次开发的用户，反映了社区的传播范围和潜在参与规模。
 
 # 评估模型算法
 
