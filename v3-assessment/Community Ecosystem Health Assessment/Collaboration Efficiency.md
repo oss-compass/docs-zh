@@ -17,14 +17,14 @@
 
 **协作开发质量**
 
-| 度量指标         | 地址                                                         | 阈值   | 权重 |
-|--------------| ------------------------------------------------------------ | ------ | ---- |
-| PR 提交代码率     | [/api/v3/collaboration_quality/pr_merge_rate](https://oss-compass.org/dataHub#api_v3_collaboration_quality_pr_merge_rate) | 1      | 0.17 |
-| PR/Issue 关联率 | [/api/v3/collaboration_quality/pr_issue_link_rate](https://oss-compass.org/dataHub#api_v3_collaboration_quality_pr_issue_link_rate) | 1 占比 | 0.17 |
+| 度量指标         | 地址                                                                                                                                                      | 阈值   | 权重 |
+|--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------| ------ | ---- |
+| PR 提交代码率     | [/api/v3/collaboration_quality/pr_commit_rate](https://oss-compass.org/dataHub#api_v3_collaboration_quality_pr_merge_rate)                              | 1      | 0.17 |
+| PR/Issue 关联率 | [/api/v3/collaboration_quality/pr_issue_link_rate](https://oss-compass.org/dataHub#api_v3_collaboration_quality_pr_issue_link_rate)                     | 1 占比 | 0.17 |
 | PR 评审参与率     | [/api/v3/collaboration_quality/pr_review_participation_rate](https://oss-compass.org/dataHub#api_v3_collaboration_quality_pr_review_participation_rate) | 1 占比 | 0.17 |
-| Merge协作比率    | [/api/v3/collaboration_quality/pr_non_author_merge_rate](https://oss-compass.org/dataHub#api_v3_collaboration_quality_pr_non_author_merge_rate) | 1 占比 | 0.17 |
-| PR 平均交互数     | [/api/v3/collaboration_quality/pr_average_interactions](https://oss-compass.org/dataHub#api_v3_collaboration_quality_pr_average_interactions) | 1 个   | 0.17 |
-| 分级代码审查时长     | [/api/v3/collaboration_quality/pr_review_time_by_size](https://oss-compass.org/dataHub#api_v3_collaboration_quality_pr_review_time_by_size) | 10 天  | 0.17 |
+| Merge协作比率    | [/api/v3/collaboration_quality/pr_non_author_merge_rate](https://oss-compass.org/dataHub#api_v3_collaboration_quality_pr_non_author_merge_rate)         | 1 占比 | 0.17 |
+| PR 平均交互数     | [/api/v3/collaboration_quality/pr_average_interactions](https://oss-compass.org/dataHub#api_v3_collaboration_quality_pr_average_interactions)           | 1 个   | 0.17 |
+| 分级代码审查时长     | [/api/v3/collaboration_quality/pr_review_time_by_size](https://oss-compass.org/dataHub#api_v3_collaboration_quality_pr_review_time_by_size)             | 10 天  | 0.17 |
 
 # 评估模型中的指标
 
@@ -54,7 +54,7 @@ Issue首次响应时间是衡量社区响应速度的关键指标。该指标统
 - 权重：17%
 - 阈值：60天
 
-Issue处理时长反映了社区解决问题的效率。该指标统计周期内新建 Issue 的处理时长，已关闭的 Issue 取关闭时间与创建时间之差，未关闭的 Issue 取统计时刻与创建时间之差。较短的处理时长表明社区能够快速解决用户问题，提升用户满意度。
+Issue处理时长反映了社区解决问题的效率。该指标统计周期内新建 Issue 的处理时长，已关闭的 Issue 取关闭时间与创建时间之差，未关闭的 Issue 取周期截止时间（统计时刻）与创建时间之差。较短的处理时长表明社区能够快速解决用户问题，提升用户满意度。
 
 ### PR 未响应占比
 
@@ -78,7 +78,7 @@ PR首次响应时间是衡量社区对代码贡献响应速度的关键指标。
 - 权重：17%
 - 阈值：30天
 
-PR处理时长反映了社区处理代码贡献的效率。该指标统计周期内新建 PR 的处理时长，已合并或关闭的 PR 取结束时间与创建时间之差，未结束的 PR 取本周期开始时间与创建时间之差（取平均值，单位为天）。较短的处理时长能够减少贡献者的等待时间，降低合并冲突的风险。该指标是评估社区协作效率的重要指标。
+PR处理时长反映了社区处理代码贡献的效率。该指标统计周期内新建 PR 的处理时长，已合并或关闭的 PR 取结束时间与创建时间之差，未结束的 PR 取周期截止时间（统计时刻）与创建时间之差（取平均值，单位为天）。较短的处理时长能够减少贡献者的等待时间，降低合并冲突的风险。该指标是评估社区协作效率的重要指标。
 
 ## 协作开发质量
 
